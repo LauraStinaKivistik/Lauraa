@@ -1,0 +1,162 @@
+.gallery-image img {
+    width: 100%;
+  }
+  
+  /*HEADER*/
+  
+  header .logo {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-style: Cambria;
+    font-size: 45px;
+  }
+  
+  header h2 {
+    font-size: 30px;
+  }
+  
+  header nav ul {
+    display: block;
+    margin: 0 auto;
+    text-align: center; /*IE*/
+    width: fit-content;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    padding: 16px 16px;
+  }
+  
+  nav ul li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #172029;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  hr {
+    color: #394130;
+    border-width: 2px;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  
+  header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  /*MAIN - GALLERY*/
+  
+  .gallery-h2 {
+    font-family: "Gentium Basic", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: #3a383d;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image {
+    -webkit-flex-basis: 300px; /*kuigi uuematel brauseri versioonidel peaks ka prefiksiteta töötama*/
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .post-header {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 9px #111;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .gallery-image img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  /*FOOTER*/
+  
+  footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #f1f3f0;
+    overflow: hidden;
+  }
+  
+  footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 0px;
+  }
+  
+  footer ul li {
+    display: block;
+  }
+  
+  footer ul li p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+  
+  .disclaimer {
+    display: none;
+  }
+  
+  .footer-sm {
+    width: 64px;
+    float: right;
+  }
+  
+  .footer-sm img {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 950px) {
+    .gallery-h2 {
+      display: none;
+    }
+    hr { 
+      display: none;
+  }
+  }
+  
+  @media only screen and (max-width: 950px) {
+  img#mk {
+      display: none;
+    }
+  }
